@@ -11,7 +11,7 @@ class BuildDetailView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return SingleChildScrollView(
       child: SafeArea(
         minimum: EdgeInsets.all(16),
         child: Column(
@@ -19,12 +19,12 @@ class BuildDetailView extends StatelessWidget {
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
+              children: const [
                 Text('所属类目'),
                 Text('衣服'),
               ],
             ),
-            Divider(height: 30),
+            const Divider(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -32,7 +32,7 @@ class BuildDetailView extends StatelessWidget {
                 Text('xxxx'),
               ],
             ),
-            Divider(height: 30),
+            const Divider(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -40,10 +40,26 @@ class BuildDetailView extends StatelessWidget {
                 Text('xxxx'),
               ],
             ),
-            SizedBox(height: 40),
+            const SizedBox(height: 40),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                Text('自定义属性'),
+                Text('xxxx'),
+              ],
+            ),
+            const Divider(height: 30),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                Text('自定义属性'),
+                Text('xxxx'),
+              ],
+            ),
+            const Divider(height: 30),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children:const [
                 Text('自定义属性'),
                 Text('xxxx'),
               ],
@@ -51,31 +67,15 @@ class BuildDetailView extends StatelessWidget {
             Divider(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
+              children:const [
                 Text('自定义属性'),
                 Text('xxxx'),
               ],
             ),
-            Divider(height: 30),
+            const SizedBox(height: 40),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text('自定义属性'),
-                Text('xxxx'),
-              ],
-            ),
-            Divider(height: 30),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text('自定义属性'),
-                Text('xxxx'),
-              ],
-            ),
-            SizedBox(height: 40),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
+              children:const [
                 Text('备注信息'),
                 Text('xxxx'),
               ],
@@ -83,7 +83,7 @@ class BuildDetailView extends StatelessWidget {
             Divider(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
+              children:const [
                 Text('创建时间'),
                 Text('2020-01-01'),
               ],

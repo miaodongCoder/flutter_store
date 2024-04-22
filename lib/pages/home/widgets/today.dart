@@ -11,7 +11,7 @@ class BuildToday extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Card(
+    return Card(
       margin: EdgeInsets.zero,
       child: Padding(
         padding: EdgeInsets.all(15),

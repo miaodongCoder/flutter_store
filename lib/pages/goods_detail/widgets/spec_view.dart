@@ -11,7 +11,7 @@ class BuildSpecView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return  SingleChildScrollView(
       child: SafeArea(
         minimum: EdgeInsets.all(16),
         child: Column(

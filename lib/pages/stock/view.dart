@@ -13,8 +13,7 @@ class StockPage extends StatefulWidget {
   State<StockPage> createState() => _StockPageState();
 }
 
-class _StockPageState extends State<StockPage>
-    with AutomaticKeepAliveClientMixin {
+class _StockPageState extends State<StockPage> with AutomaticKeepAliveClientMixin {
   @override
   Widget build(BuildContext context) {
     super.build(context);
@@ -67,13 +66,18 @@ class _StockPageState extends State<StockPage>
           Expanded(
             child: CustomScrollView(
               slivers: [
-                SliverList.builder(
-                  itemBuilder: (context, index) {
-                    return BuildGoods(
-                      onTap: () => context.pushNamed(Routes.goodsDetail),
-                    );
-                  },
+                SliverList(
+                  delegate: SliverChildBuilderDelegate(
+                    (context, index) => BuildGoods(onTap: () => context.pushNamed(Routes.goodsDetail)),
+                  ),
                 ),
+                // SliverList.builder(
+                //   itemBuilder: (context, index) {
+                //     return BuildGoods(
+                //       onTap: () => context.pushNamed(Routes.goodsDetail),
+                //     );
+                //   },
+                // ),
               ],
             ),
           ),

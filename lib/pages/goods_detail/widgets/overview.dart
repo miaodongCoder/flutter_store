@@ -26,7 +26,7 @@ class BuildOverview extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 15),
-          const Expanded(
+           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [

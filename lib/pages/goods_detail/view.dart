@@ -15,7 +15,7 @@ class GoodsDetailPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('韩版修身牛仔裤'),
       ),
-      body: const DefaultTabController(
+      body:  DefaultTabController(
         length: 3,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
